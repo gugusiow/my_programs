@@ -11,8 +11,8 @@ int main(){
   // printf("Hello %s", name); //u can do it this way as well.
   
   FILE *fileptr;
-  // fileptr = fopen("testfile1.txt", "r");
-  fileptr = fopen("testfile2.txt", "a");  // a is append mode, can read and write
+  // fileptr = fopen("helloballs.txt", "r");
+  fileptr = fopen("helloballs.txt", "a");  // a is append mode, can read and write
 
   // writing into the file
   fprintf(fileptr, "%s\n", name);
@@ -34,7 +34,7 @@ int main(){
   }
   if (val == 0) {
     FILE *fileptr;
-    fileptr = fopen("testfile2.txt", "w+"); // w+ mode -> If the file exists, its contents are overwritten
+    fileptr = fopen("helloballs.txt", "w+"); // w+ mode -> If the file exists, its contents are overwritten
     printf("Contents of file have been wiped.\n");
     } else if (val == 1) {
     printf("Contents of file have not changed.\n");
